@@ -1,0 +1,105 @@
+header {
+    width: 87.5%;
+    margin: 1.75rem auto 2.5vh;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .brand-wrapper {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+            .name {
+                font-size: 1.9rem;
+                font-weight: 500;
+                margin-right: 3px;
+            }
+            img {
+                object-fit: cover;
+                height: 4.5vh;
+            }
+        }
+        .header_menu {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            position: relative;
+            .copy-wrapper {
+                background-color: #15181D;
+                padding: 6px 12px;
+                border-radius: 5px;
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                letter-spacing: 0.1px;
+                .copy-icon {
+                    font-size: 16px;
+                    color: rgb(125, 125, 125);
+                    margin-right: 7px;
+                    transition: .14s ease-in-out;
+                    cursor: pointer;
+                }
+                &:hover {
+                    .copy-icon {
+                        color: rgb(175, 175, 175);
+                    }
+                }
+            }
+            .bell-icon-wrapper {
+                margin-left: 2.25rem;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                position: relative;
+                .bell-icon {
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: -4px;
+                    right: -4px;
+                    background-color: #9F4FEC;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    transition: .175s ease-in-out;
+                }
+                &:hover {
+                    &::after {
+                        transform: translateY(-2px);
+                        scale: 1.05;
+                    }
+                }
+            }
+            .account-balance-wrapper {
+                margin-left: 2.25rem;
+                border: 1px solid rgb(50, 50, 50);
+                font-size: 14px;
+                padding: 6px 8px;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: .125s ease-in-out;
+                img {
+                    margin-right: 10px;
+                    object-fit: cover;
+                    height: 20px;
+                }
+                &:hover {
+                    border-color: rgb(75, 75, 75);
+                    background-color: rgb(21, 24, 29);
+                }
+            }
+            .hamburger-icon {
+                margin-left: 2.25rem;
+                font-size: 1.75rem;
+                cursor: pointer;
+            }
+        }
+    }
+}

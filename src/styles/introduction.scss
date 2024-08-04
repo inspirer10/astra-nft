@@ -1,0 +1,78 @@
+.introduction_section {
+    margin: 5vh auto;
+    width: 87.5%;
+    height: 70vh;
+    position: relative;
+    border-radius: 22px;
+    overflow: hidden;
+    // #000755;
+    .background_gradient {
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(circle at 30% 30%, #330a4a, #020632 60%, #000755 90%), radial-gradient(circle, #634fec, #704fec, #7c4fec, #884fec, #924fec, #8949df, #7f42d2, #763cc5, #592ea8, #3e218c, #221370, #000755);
+        animation: gradient 14s linear infinite alternate;
+        background-size: 200% 200%;
+        position: relative;
+        .testIMG {
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            animation: blobMove 12s ease infinite alternate;
+            transition: all 1s ease-in-out;
+            background-image: linear-gradient(to right bottom, #a647d2, #873abb, #692ea3, #4c228c, #2f1674, #201265, #100e55, #020846, #06073b, #09042f, #090224, #040019);
+            height: 72.5%;
+            width: 37.5%;
+        }
+    }
+    .introduction_text-content {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        .subheading {
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: -0.25px;
+            word-spacing: 2px;
+        }
+        h2 {
+            line-height: calc(4rem * 1.2);
+            font-size: 4rem;
+            font-weight: 500;
+            margin: 2vh 0;
+            width: 60%;
+            letter-spacing: 0.25px;
+            word-spacing: 1px;
+        }
+        .description {
+            width: 32.5%;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: calc(18px * 1.4);
+            letter-spacing: 0.25px;
+        }
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes blobMove {
+    0%,
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+}
