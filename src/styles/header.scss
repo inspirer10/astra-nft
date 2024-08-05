@@ -27,28 +27,31 @@ header {
             position: relative;
             .copy-wrapper {
                 background-color: #15181D;
-                padding: 6px 12px;
+                padding: 6px 11px;
                 border-radius: 5px;
                 font-size: 14px;
+                letter-spacing: 0.1px;
+                border: 1px solid #15181D;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                letter-spacing: 0.1px;
+                transition: .15s ease-in-out;
                 .copy-icon {
                     font-size: 16px;
                     color: rgb(125, 125, 125);
                     margin-right: 7px;
-                    transition: .14s ease-in-out;
+                    transition: .15s ease-in-out;
                     cursor: pointer;
                 }
                 &:hover {
+                    border-color: rgb(75, 75, 75);
                     .copy-icon {
                         color: rgb(175, 175, 175);
                     }
                 }
             }
             .bell-icon-wrapper {
-                margin-left: 2.25rem;
+                margin-right: 1.5rem;
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
@@ -76,7 +79,7 @@ header {
                 }
             }
             .account-balance-wrapper {
-                margin-left: 2.25rem;
+                margin-left: 1.3rem;
                 border: 1px solid rgb(50, 50, 50);
                 font-size: 14px;
                 padding: 6px 8px;
@@ -96,10 +99,22 @@ header {
                 }
             }
             .hamburger-icon {
-                margin-left: 2.25rem;
+                margin-left: 3rem;
                 font-size: 1.75rem;
                 cursor: pointer;
+                &.active {
+                    animation: handleMenuShow 0.3s ease forwards;
+                }
             }
         }
+    }
+}
+
+@keyframes handleMenuShow {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

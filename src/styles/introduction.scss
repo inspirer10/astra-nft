@@ -46,11 +46,12 @@
             word-spacing: 1px;
         }
         .description {
-            width: 32.5%;
+            width: 35%;
             font-size: 18px;
             font-weight: 300;
             line-height: calc(18px * 1.4);
             letter-spacing: 0.25px;
+            text-wrap: balance;
         }
     }
 }

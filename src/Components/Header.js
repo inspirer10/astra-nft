@@ -1,9 +1,11 @@
-import React from 'react';
-import { RiMenu3Line } from 'react-icons/ri';
+import React, { useState } from 'react';
+import { RiMenu3Line, RiCloseLargeFill } from 'react-icons/ri';
 import { GoBell } from 'react-icons/go';
 import { PiCopy } from 'react-icons/pi';
 
 function Header() {
+    const [menu, setMenu] = useState(false);
+
     return (
         <header>
             <nav>
@@ -13,19 +15,27 @@ function Header() {
                 </div>
 
                 <div className='header_menu'>
-                    <div className='copy-wrapper'>
-                        <PiCopy className='copy-icon' /> #081547111337
-                    </div>
-
                     <div className='bell-icon-wrapper'>
                         <GoBell className='bell-icon' />
                     </div>
-
+                    <div className='copy-wrapper'>
+                        <PiCopy className='copy-icon' /> #081547111337
+                    </div>
                     <div className='account-balance-wrapper'>
                         <img src='icon.png' alt='' /> 0.5 ETH
                     </div>
 
-                    <RiMenu3Line className='hamburger-icon' />
+                    {!menu ? (
+                        <RiMenu3Line
+                            className='hamburger-icon'
+                            onClick={() => setMenu(true)}
+                        />
+                    ) : (
+                        <RiCloseLargeFill
+                            className='hamburger-icon active'
+                            onClick={() => setMenu(false)}
+                        />
+                    )}
                 </div>
             </nav>
         </header>

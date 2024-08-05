@@ -1,0 +1,66 @@
+.popularItem_section {
+    margin: 10vh auto;
+    width: 87.5%;
+    h2 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .buttons-row {
+        margin: 1.25rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .buttons-wrapper {
+            button {
+                outline: none;
+                border: 1px solid transparent;
+                font-size: 20px;
+                font-weight: 400;
+                letter-spacing: -0.25px;
+                padding: 6px 12px;
+                border-radius: 6px;
+                background-color: #15181D;
+                color: rgb(150, 150, 150);
+                margin-right: 1.25rem;
+                transition: .17s ease-in-out;
+                cursor: pointer;
+                background-image: linear-gradient(90deg, #15181D, #15161d);
+                &:hover {
+                    color: rgb(200, 200, 200);
+                    border-color: rgb(175, 175, 175);
+                }
+                &.active {
+                    background-color: #634FEC;
+                    background-image: linear-gradient(to right bottom, #a647d2, #873abb, #692ea3, #4c228c, #2f1674, #201265, #100e55, #020846, #06073b, #09042f, #090224, #040019);
+                    border-color: rgb(6, 7, 12);
+                    color: rgb(200, 200, 200);
+                }
+            }
+        }
+        .sort-button {
+            outline: none;
+            border: 1px solid transparent;
+            font-size: 20px;
+            font-weight: 300;
+            padding: 6px 15px;
+            border-radius: 6px;
+            background-color: #15181D;
+            color: rgb(150, 150, 150);
+            transition: .17s ease-in-out;
+            background-image: linear-gradient(90deg, #15181D, #15161d);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            .sort-icon {
+                font-size: 22px;
+                margin-left: 10px;
+                color: #692ea3;
+            }
+            &:hover {
+                color: rgb(200, 200, 200);
+                border-color: rgb(175, 175, 175);
+            }
+        }
+    }
+}
