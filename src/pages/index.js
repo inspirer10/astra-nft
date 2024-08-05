@@ -5,6 +5,7 @@ import Header from '@/Components/Header';
 import Introduction from '@/Components/Introduction';
 import PopularItem from '@/Components/PopularItem';
 import ProductsShowcase from '@/Components/ProductsShowcase';
+import Footer from '@/Components/Footer';
 
 export default function Home() {
     useEffect(() => {
@@ -36,6 +37,7 @@ export default function Home() {
             <Introduction />
             <PopularItem />
             <ProductsShowcase />
+            <Footer />
         </>
     );
 }

@@ -22,7 +22,7 @@ function Header() {
                         <PiCopy className='copy-icon' /> #081547111337
                     </div>
                     <div className='account-balance-wrapper'>
-                        <img src='icon.png' alt='' /> 0.5 ETH
+                        <img src='ETH-Logo.png' alt='' /> 19.3 ETH
                     </div>
 
                     {!menu ? (
