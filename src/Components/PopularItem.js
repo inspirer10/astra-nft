@@ -44,7 +44,7 @@ function PopularItem() {
                             hours--;
                         } else {
                             clearInterval(countdown);
-                            return { hours: 0, minutes: 0, seconds: 0 }; // Zatrzymanie licznika
+                            return { hours: 0, minutes: 0, seconds: 0 }; //stop licznika
                         }
                     }
                 }

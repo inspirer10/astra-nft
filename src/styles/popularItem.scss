@@ -15,7 +15,7 @@
                 font-family: "Inter", sans-serif;
                 outline: none;
                 border: 1px solid transparent;
-                font-size: 20px;
+                font-size: 22px;
                 font-weight: 400;
                 letter-spacing: -0.25px;
                 padding: 6px 12px;
@@ -27,14 +27,14 @@
                 cursor: pointer;
                 background-image: linear-gradient(90deg, #15181D, #15161d);
                 &:hover {
-                    color: rgb(200, 200, 200);
-                    border-color: rgb(175, 175, 175);
+                    color: rgb(215, 215, 215);
+                    border-color: rgb(100, 100, 100);
                 }
                 &.active {
                     background-color: #634FEC;
                     background-image: linear-gradient(to right bottom, #a647d2, #873abb, #692ea3, #4c228c, #2f1674, #201265, #100e55, #020846, #06073b, #09042f, #090224, #040019);
                     border-color: rgb(6, 7, 12);
-                    color: rgb(200, 200, 200);
+                    color: rgb(215, 215, 215);
                 }
             }
         }
@@ -42,12 +42,12 @@
             font-family: "Inter", sans-serif;
             outline: none;
             border: 1px solid transparent;
-            font-size: 20px;
-            font-weight: 300;
+            font-size: 21px;
+            font-weight: 400;
             padding: 6px 15px;
             border-radius: 6px;
             background-color: #15181D;
-            color: rgb(150, 150, 150);
+            color: rgb(175, 175, 175);
             transition: .17s ease-in-out;
             background-image: linear-gradient(90deg, #15181D, #15161d);
             display: flex;
@@ -55,13 +55,13 @@
             justify-content: center;
             cursor: pointer;
             .sort-icon {
-                font-size: 22px;
+                font-size: 25px;
                 margin-left: 10px;
                 color: #692ea3;
             }
             &:hover {
-                color: rgb(200, 200, 200);
-                border-color: rgb(175, 175, 175);
+                color: rgb(215, 215, 215);
+                border-color: rgb(125, 125, 125);
             }
         }
     }
@@ -74,7 +74,7 @@
         img {
             object-fit: cover;
             object-position: center;
-            width: 45%;
+            width: 47.5%;
             height: 80vh;
             border-radius: 20px;
         }
@@ -140,35 +140,35 @@
                 //backdrop-filter: blur(15px);
                 background-color: #15181D;
                 border-radius: 10px;
-                padding: 2rem 1rem;
+                padding: 1.75rem 1rem 2rem;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 .current {
                     font-family: "Inter", sans-serif;
-                    font-weight: 300;
+                    font-weight: 400;
                     margin-bottom: 1rem;
                     letter-spacing: -0.2px;
                 }
                 h2 {
                     font-family: "Inter", sans-serif;
-                    font-size: 2.4rem;
-                    font-weight: 400;
+                    font-size: 2.5rem;
+                    font-weight: 600;
                     letter-spacing: -0.25px;
                 }
                 .price_subheading {
                     font-family: "Inter", sans-serif;
-                    font-size: 17px;
-                    font-weight: 300;
+                    font-size: 18px;
+                    font-weight: 500;
                     letter-spacing: 0.25px;
                     margin-top: 0.25rem;
-                    color: rgb(150, 150, 150);
+                    color: rgb(125, 125, 125);
                 }
                 .ending-info {
                     font-family: "Inter", sans-serif;
-                    font-size: 14px;
-                    font-weight: 300;
+                    font-size: 15px;
+                    font-weight: 100;
                     margin: 2rem 0 0rem;
                     letter-spacing: 0.5px;
                 }
@@ -192,8 +192,8 @@
                         .time {
                             font-family: "Inter", sans-serif;
                             font-size: 13px;
-                            font-weight: 300;
-                            color: rgb(135, 135, 135);
+                            font-weight: 400;
+                            color: rgb(100, 100, 100);
                         }
                     }
                 }
@@ -277,6 +277,15 @@ body.modal-open {
                     scale: 1.05;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .popularItem_section {
+        margin: 10vh auto 17.5vh;
+        .highlighted-item {
+            width: 82.5%;
         }
     }
 }

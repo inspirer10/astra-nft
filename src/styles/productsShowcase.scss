@@ -109,3 +109,16 @@
         }
     }
 }
+
+@media screen and (max-width: 1500px) {
+    .productsShowcase-section {
+        margin: 10vh auto 15vh;
+        width: 92.5%;
+        article {
+            .card {
+                height: 62.5vh;
+                width: calc(87.5% / 4);
+            }
+        }
+    }
+}
