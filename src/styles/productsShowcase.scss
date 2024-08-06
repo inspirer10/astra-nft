@@ -1,5 +1,5 @@
 .productsShowcase-section {
-    margin: 10vh auto 15vh;
+    margin: 10vh auto 7.5vh;
     width: 80%;
     article {
         display: flex;
@@ -118,6 +118,19 @@
             .card {
                 height: 62.5vh;
                 width: calc(87.5% / 4);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .productsShowcase-section {
+        width: calc(100% - 1rem);
+        article {
+            justify-content: space-around;
+            .card {
+                height: 62.5vh;
+                width: calc(92.5% / 3);
             }
         }
     }

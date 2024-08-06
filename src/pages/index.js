@@ -6,6 +6,7 @@ import Introduction from '@/Components/Introduction';
 import PopularItem from '@/Components/PopularItem';
 import ProductsShowcase from '@/Components/ProductsShowcase';
 import Footer from '@/Components/Footer';
+import CardsParallax from '@/Components/CardsParallax';
 
 export default function Home() {
     useEffect(() => {
@@ -37,6 +38,7 @@ export default function Home() {
             <Introduction />
             <PopularItem />
             <ProductsShowcase />
+            <CardsParallax />
             <Footer />
         </>
     );

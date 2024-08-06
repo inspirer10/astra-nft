@@ -96,3 +96,33 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: 1250px) {
+    footer {
+        .footer_content-container {
+            .footer-content {
+                width: 90%;
+                .brand-wrapper {
+                    .name {
+                        font-size: 1.6rem;
+                        margin-right: 2px;
+                    }
+                    img {
+                        height: 4.25vh;
+                    }
+                }
+                .footer-links {
+                    p {
+                        margin: 0 10px;
+                    }
+                }
+                .footer-icons {
+                    .icon {
+                        font-size: 1.25rem;
+                        margin: 0 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

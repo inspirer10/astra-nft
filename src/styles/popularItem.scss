@@ -289,3 +289,16 @@ body.modal-open {
         }
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .popularItem_section {
+        width: 87.5%;
+        margin: 10vh auto 17.5vh;
+        .highlighted-item {
+            width: 100%;
+            .highlighted-item-content {
+                margin-left: 5%;
+            }
+        }
+    }
+}

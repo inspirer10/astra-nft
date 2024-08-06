@@ -118,3 +118,12 @@ header {
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    header {
+        width: 92.5%;
+        nav .header_menu .hamburger-icon {
+            margin-left: 2.25rem;
+        }
+    }
+}

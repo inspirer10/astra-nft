@@ -1,0 +1,115 @@
+// stack kard - on hover nakładają sie na siebie
+.cards-parallax {
+    margin: 0vh 0 2.5vh;
+    .card-container {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top: 0px;
+        .card {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            height: 500px;
+            width: 1000px;
+            height: 65vh;
+            width: 55vw;
+            border-radius: 25px;
+            padding: 40px 50px 50px;
+            transform-origin: top;
+            h2 {
+                text-align: center;
+                margin: 0px;
+                font-size: 2rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                word-spacing: 4px;
+            }
+            .card-Body {
+                display: flex;
+                height: 100%;
+                margin-top: 50px;
+                gap: 50px;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .description {
+                    width: 40%;
+                    position: relative;
+                    text-align: left;
+                    text-wrap: balance;
+                    margin-bottom: 2rem;
+                    p {
+                        font-family: 'Inter', sans-serif;
+                        font-size: 1.25rem;
+                        line-height: calc(1.25rem * 1.325);
+                        font-weight: 400;
+                        letter-spacing: 0.6px;
+                        &::first-letter {
+                            line-height: calc(2.25rem * 1.1);
+                            font-size: 2.25rem;
+                            font-family: 'Title';
+                        }
+                    }
+                }
+                .image-Container {
+                    position: relative;
+                    width: 60%;
+                    height: 100%;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    .inner {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .cards-parallax {
+        .card-container {
+            .card {
+                width: 65vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .cards-parallax {
+        .card-container {
+            .card {
+                width: 87.5vw;
+                .card-Body {
+                    margin-top: 50px;
+                    gap: 35px;
+                    .description {
+                        width: 50%;
+                        p {
+                            font-size: 19px;
+                            line-height: calc(19px * 1.35);
+                            letter-spacing: 0.75px;
+                            font-weight: 300;
+                            &::first-letter {
+                                line-height: calc(2rem * 1.1);
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

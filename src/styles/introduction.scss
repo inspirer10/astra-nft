@@ -79,3 +79,40 @@
         border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
     }
 }
+
+@media screen and (max-width: 1500px) {
+    .introduction_section {
+        .introduction_text-content {
+            h2 {
+                font-size: 3.75rem;
+                line-height: calc(3.75rem * 1.15);
+                width: 85%;
+            }
+            .description {
+                width: 42.5%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .introduction_section {
+        width: 87.5%;
+        height: 60vh;
+        .introduction_text-content {
+            .subheading {
+                font-size: 15px;
+            }
+            h2 {
+                font-size: 3.25rem;
+                line-height: calc(3.25rem * 1.15);
+                width: 95%;
+            }
+            .description {
+                font-size: 16px;
+                line-height: calc(16px * 1.375);
+                width: 70%;
+            }
+        }
+    }
+}
