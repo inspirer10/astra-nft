@@ -1,6 +1,6 @@
 .introduction_section {
-    margin: 5vh auto;
-    width: 87.5%;
+    margin: 7.5vh auto;
+    width: 82.5%;
     height: 70vh;
     position: relative;
     border-radius: 22px;
@@ -31,16 +31,17 @@
         left: 40%;
         transform: translate(-50%, -50%);
         .subheading {
+            font-family: 'Inter', sans-serif;
             text-transform: uppercase;
             font-weight: 400;
-            letter-spacing: -0.25px;
-            word-spacing: 2px;
+            letter-spacing: -0.3px;
+            word-spacing: 1.5px;
         }
         h2 {
             line-height: calc(4rem * 1.2);
             font-size: 4rem;
             font-weight: 500;
-            margin: 2vh 0;
+            margin: 2.25vh 0;
             width: 60%;
             letter-spacing: 0.25px;
             word-spacing: 1px;
@@ -49,8 +50,9 @@
             width: 35%;
             font-size: 18px;
             font-weight: 300;
-            line-height: calc(18px * 1.4);
-            letter-spacing: 0.25px;
+            line-height: calc(18px * 1.35);
+            letter-spacing: 0.4px;
+            word-spacing: 0.5px;
             text-wrap: balance;
         }
     }

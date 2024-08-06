@@ -16,7 +16,14 @@ function Footer() {
                         <img src='img1.png' alt='brand icon' />
                     </div>
 
-                    <div className='footer_icons'>
+                    <div className='footer-links'>
+                        <p>Privacy & Policy</p>
+                        <p>Contact</p>
+                        <p>About</p>
+                        <p>Help Center</p>
+                    </div>
+
+                    <div className='footer-icons'>
                         <FaTwitter className='icon' />
                         <FaLinkedin className='icon' />
                         <FaBehanceSquare className='icon' />

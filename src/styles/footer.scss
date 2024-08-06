@@ -15,11 +15,21 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 85%;
+            height: 2px;
+            margin-top: 10vh;
+            background-image: linear-gradient(to right, #d16ba5, #d062ae, #cc5aba, #c554c7, #b950d6, #a64ed6, #924dd6, #7b4cd5, #6248c3, #4a43b0, #343e9c, #1f3788);
+            transform-origin: center;
+        }
         .footer-content {
             margin: 1rem auto;
             width: 85%;
             display: flex;
-            align-items: center;
+            align-items: baseline;
             justify-content: space-between;
             .brand-wrapper {
                 display: flex;
@@ -36,13 +46,49 @@ footer {
                     height: 4.5vh;
                 }
             }
-            .footer_icons {
-                .icon {
-                    font-size: 2rem;
-                    margin: 0 1.5rem;
+            .footer-links {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p {
+                    position: relative;
+                    font-family: 'Inter', sans-serif;
+                    padding: 2px 4px 4px;
+                    margin: 0 14px;
+                    font-size: 15px;
+                    font-weight: 500;
+                    letter-spacing: -0.2px;
                     cursor: pointer;
-                    transition: .175s ease;
+                    transition: .175s ease-in-out;
                     &:hover {
+                        &::after {
+                            transform: scaleX(1);
+                            transform-origin: left;
+                        }
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        height: 2px;
+                        margin-top: 0.5rem;
+                        background-image: linear-gradient(90deg, #1f3788, #9F4FEC);
+                        transform-origin: right;
+                        //transition: transform .475s cubic-bezier(.55, 0, .1, 1);
+                        transition: transform .5s cubic-bezier(.55, 0, .1, 1);
+                        transform: scaleX(0);
+                    }
+                }
+            }
+            .footer-icons {
+                .icon {
+                    font-size: 1.6rem;
+                    margin: 0 1.3rem;
+                    cursor: pointer;
+                    transition: 0.2s ease-in-out;
+                    &:hover {
+                        color: #2356ff;
                         transform: translateY(-2px);
                     }
                 }
