@@ -184,7 +184,7 @@ function PopularItem() {
                             className='image-wrapper'
                             onClick={(e) => e.stopPropagation()}
                         >
-                            <img src='nft10.jpg' alt='NFT thumbnail' />
+                            <img src='nft3.jpg' alt='NFT thumbnail' />
                         </div>
                     </div>
                 </div>

@@ -41,19 +41,29 @@
                 .faq-toggle {
                     font-size: 20px;
                     font-weight: 600;
-                    transition: transform 0.3s ease;
+                    transition: 0.3s ease;
                 }
             }
             .faq-answer {
-                font-size: 17px;
-                font-weight: 400;
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+                font-weight: 300;
                 text-align: justify;
-                line-height: calc( 17px * 1.4);
+                line-height: calc(16px * 1.45);
                 margin: 0.25rem auto;
-                padding: 12px;
+                padding: 0 12px;
                 overflow: hidden;
-                transition: max-height 0.3s ease;
                 letter-spacing: 0.25px;
+                opacity: 0;
+                height: 0;
+                max-height: 0;
+                &.acitve {
+                    padding: 12px;
+                    transition: 0.4s opacity ease-in-out;
+                    height: auto;
+                    max-height: 100%;
+                    opacity: 1;
+                }
             }
             .faq-question#opened {
                 transition: none;

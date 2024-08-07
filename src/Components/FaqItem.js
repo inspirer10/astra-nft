@@ -17,7 +17,12 @@ const FAQItem = ({ question, answer }) => {
                     {isOpen ? <FiMinus /> : <GoPlus />}
                 </span>
             </div>
-            {isOpen && <div className='faq-answer'>{answer}</div>}
+
+            {isOpen ? (
+                <div className='faq-answer acitve'>{answer}</div>
+            ) : (
+                <div className='faq-answer '>{answer}</div>
+            )}
         </div>
     );
 };

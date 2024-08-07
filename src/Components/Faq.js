@@ -19,7 +19,6 @@ function Faq() {
             question: 'How do I know if an NFT is authentic?',
             answer: 'Each NFT on our platform is verified and authenticated through blockchain technology. You can view the provenance of the NFT, including its creation details, ownership history, and any previous sales. This information ensures that you are purchasing a genuine and original digital asset. Additionally, our platform features artist verification badges to further guarantee authenticity.',
         },
-
         {
             question: 'What rights do I have when I purchase an NFT?',
             answer: 'When you purchase an NFT, you own the digital asset associated with it, which may include artwork, music, or other media. Ownership of the NFT allows you to display or resell the asset, but it does not typically grant you copyright or commercial use rights unless explicitly stated by the creator. Always review the terms associated with each NFT to understand your rights as an owner.',
