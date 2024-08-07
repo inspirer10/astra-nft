@@ -91,9 +91,7 @@ function PopularItem() {
                     <img src='nft3.jpg' alt='item thumbnail' />
 
                     <aside className='highlighted-item-content'>
-                        <p className='ntf-name'>
-                            Blessed assurance <span>© </span>
-                        </p>
+                        <p className='ntf-name'>Cosmic Glimpse</p>
 
                         <div className='details-container'>
                             <div className='details-wrapper'>

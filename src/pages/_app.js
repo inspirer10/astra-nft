@@ -5,6 +5,7 @@ import '@/styles/popularItem.scss';
 import '@/styles/productsShowcase.scss';
 import '@/styles/footer.scss';
 import '@/styles/cardsParallax.scss';
+import '@/styles/faq.scss';
 
 export default function App({ Component, pageProps }) {
     return <Component {...pageProps} />;
