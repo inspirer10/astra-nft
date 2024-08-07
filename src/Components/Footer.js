@@ -13,7 +13,7 @@ function Footer() {
                 <div className='footer-content'>
                     <div className='brand-wrapper'>
                         <p className='name'>AstraNFT</p>
-                        <img src='img1.png' alt='brand icon' />
+                        <img src='img1.png' alt='brand icon' loading='lazy' />
                     </div>
 
                     <div className='footer-links'>

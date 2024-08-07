@@ -127,11 +127,11 @@ function ProductsShowcase() {
                     ({ nftName, nftSrc, user, avatarSrc, price }) => (
                         <div className='card'>
                             <div className='nft-image-container'>
-                                <div
+                                <img
                                     className='nft-image'
-                                    style={{
-                                        backgroundImage: `url(${nftSrc})`,
-                                    }}
+                                    src={nftSrc}
+                                    alt='ntf thumbnail'
+                                    loading='lazy'
                                 />
                             </div>
 

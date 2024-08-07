@@ -88,7 +88,7 @@ function PopularItem() {
                     </button>
                 </div>
                 <article className='highlighted-item'>
-                    <img src='nft3.jpg' alt='item thumbnail' />
+                    <img src='nft3.jpg' alt='item thumbnail' loading='lazy' />
 
                     <aside className='highlighted-item-content'>
                         <p className='ntf-name'>Cosmic Glimpse</p>
@@ -99,6 +99,7 @@ function PopularItem() {
                                     className='creator-avatar'
                                     src='userAvatar8.jpg'
                                     alt='creator thumbnail'
+                                    loading='lazy'
                                 />
                                 <div className='details-info'>
                                     <p className='info-heading'>Creator</p>
@@ -109,8 +110,9 @@ function PopularItem() {
                             <div className='details-wrapper'>
                                 <img
                                     className='creator-avatar'
-                                    src='ETH-logo.png'
+                                    src='ETH-Logo.png'
                                     alt='creator thumbnail'
+                                    loading='lazy'
                                 />
                                 <div className='details-info'>
                                     <p className='info-heading'>
@@ -184,7 +186,11 @@ function PopularItem() {
                             className='image-wrapper'
                             onClick={(e) => e.stopPropagation()}
                         >
-                            <img src='nft3.jpg' alt='NFT thumbnail' />
+                            <img
+                                src='nft3.jpg'
+                                alt='NFT thumbnail'
+                                loading='lazy'
+                            />
                         </div>
                     </div>
                 </div>

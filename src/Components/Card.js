@@ -43,7 +43,7 @@ function Card({
                             style={{ scale: imageScale }}
                             className='inner'
                         >
-                            <img src={img} alt='nft thumbnail' />
+                            <img src={img} alt='nft thumbnail' loading='lazy' />
                         </motion.div>
                     </div>
                 </div>
