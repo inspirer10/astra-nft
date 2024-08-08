@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { TbArrowsExchange } from 'react-icons/tb';
+import Image from 'next/image';
 
 function PopularItem() {
     const [activeElement, setActiveElement] = useState(1);
@@ -88,19 +89,27 @@ function PopularItem() {
                     </button>
                 </div>
                 <article className='highlighted-item'>
-                    <img src='nft3.jpg' alt='item thumbnail' loading='lazy' />
+                    <Image
+                        src='/nft3.jpg'
+                        alt='item thumbnail'
+                        width={950}
+                        height={950}
+                        placeholder='empty'
+                    />
 
                     <aside className='highlighted-item-content'>
                         <p className='ntf-name'>Cosmic Glimpse</p>
 
                         <div className='details-container'>
                             <div className='details-wrapper'>
-                                <img
+                                <Image
                                     className='creator-avatar'
-                                    src='userAvatar8.jpg'
+                                    src='/userAvatar8.jpg'
                                     alt='creator thumbnail'
-                                    loading='lazy'
+                                    width={50}
+                                    height={50}
                                 />
+
                                 <div className='details-info'>
                                     <p className='info-heading'>Creator</p>
                                     <p>Cerr M</p>
@@ -108,12 +117,14 @@ function PopularItem() {
                             </div>
 
                             <div className='details-wrapper'>
-                                <img
+                                <Image
                                     className='creator-avatar'
-                                    src='ETH-Logo.png'
+                                    src='/ETH-Logo.png'
                                     alt='creator thumbnail'
-                                    loading='lazy'
+                                    width={50}
+                                    height={50}
                                 />
+
                                 <div className='details-info'>
                                     <p className='info-heading'>
                                         Instant Price
@@ -186,10 +197,12 @@ function PopularItem() {
                             className='image-wrapper'
                             onClick={(e) => e.stopPropagation()}
                         >
-                            <img
-                                src='nft3.jpg'
+                            <Image
+                                src='/nft3.jpg'
                                 alt='NFT thumbnail'
-                                loading='lazy'
+                                width={950}
+                                height={950}
+                                placeholder='empty'
                             />
                         </div>
                     </div>

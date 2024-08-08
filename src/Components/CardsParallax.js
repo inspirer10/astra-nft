@@ -13,35 +13,35 @@ function CardsParallax() {
     const cardsData = [
         {
             title: 'Stellar Evolution',
-            img: 'nft1.jpg',
+            img: '/nft1.jpg',
             description:
                 'Stellar Evolution captures the explosive colors and forms that reflect the dynamic processes within stars. This digital composition blends intricate structures with intense gradients, symbolizing the birth and transformation of cosmic phenomena.',
             color: '#000814',
         },
         {
             title: 'Broken Elegance',
-            img: 'nft15.jpg',
+            img: '/nft15.jpg',
             description:
                 'Broken Elegance is a tribute to classical beauty, while subtly critiquing its fragility. This sculpture, with its classical features, cracked and gilded, demonstrates how beauty can be enhanced by imperfections and the passage of time.',
             color: '#041a31',
         },
         {
             title: 'Prism Horizon',
-            img: 'nft16.jpg',
+            img: '/nft16.jpg',
             description:
                 'Prism Horizon is a burst of color and light emanating from a central prism. This composition captures the moment when light breaks into its original hues, creating a spectacular display that transcends the limits of ordinary perception',
             color: '#001d3d',
         },
         {
             title: 'Face of Nature',
-            img: 'nft5.jpg',
+            img: '/nft5.jpg',
             description:
                 'Fantasist presents a world of dreams and abstract forms. Its vibrant colors and fluid shapes encapsulate the essence of imagination and creative thinking, transcending the boundaries of reality to open doors to infinite possibilities.',
             color: '#680707',
         },
         {
             title: 'Vivid Stream',
-            img: 'nft11.jpg',
+            img: '/nft11.jpg',
             description:
                 'Vivid Stream is a mesmerizing flow of intense colors and light reflections, symbolizing the continuous stream of energy and emotion. This digital art immerses the viewer in a dynamic wave of colors that transform before their eyes.',
             color: '#004328',

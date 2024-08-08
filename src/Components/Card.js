@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import Image from 'next/image';
 
 function Card({
     color,
@@ -43,7 +44,13 @@ function Card({
                             style={{ scale: imageScale }}
                             className='inner'
                         >
-                            <img src={img} alt='nft thumbnail' loading='lazy' />
+                            <Image
+                                src={img}
+                                alt='nft thumbnail'
+                                fill
+                                placeholder='blur'
+                                blurDataURL={img}
+                            />
                         </motion.div>
                     </div>
                 </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaEthereum } from 'react-icons/fa';
+import Image from 'next/image';
 
 function ProductsShowcase() {
     const cardsData = [
@@ -127,21 +128,27 @@ function ProductsShowcase() {
                     ({ nftName, nftSrc, user, avatarSrc, price }) => (
                         <div className='card'>
                             <div className='nft-image-container'>
-                                <img
+                                <Image
                                     className='nft-image'
                                     src={nftSrc}
                                     alt='ntf thumbnail'
-                                    loading='lazy'
+                                    width={600}
+                                    height={600}
+                                    plxaceholder='empty'
+                                    placeholder='blur'
+                                    blurDataURL={nftSrc}
                                 />
                             </div>
 
                             <p className='nft-name'>{nftName}</p>
 
                             <div className='user-data'>
-                                <img
+                                <Image
                                     src={avatarSrc}
                                     alt='user thumbnail'
-                                    loading='lazy'
+                                    width={50}
+                                    height={50}
+                                    placeholder='empty'
                                 />
                                 <p className='user-name'>@{user}</p>
                             </div>

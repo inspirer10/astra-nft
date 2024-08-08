@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import {
     FaTwitter,
@@ -13,7 +14,12 @@ function Footer() {
                 <div className='footer-content'>
                     <div className='brand-wrapper'>
                         <p className='name'>AstraNFT</p>
-                        <img src='img1.png' alt='brand icon' loading='lazy' />
+                        <Image
+                            src='/img1.png'
+                            alt='brand icon'
+                            height={35}
+                            width={35}
+                        />
                     </div>
 
                     <div className='footer-links'>
