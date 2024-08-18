@@ -148,6 +148,10 @@
                 height: 55vh;
                 width: calc(95% / 2);
                 margin-bottom: 4vh;
+                padding: 1rem 0 1.25rem;
+                .nft-image-container {
+                    width: 90%;
+                }
                 .user-data {
                     justify-content: center;
                 }

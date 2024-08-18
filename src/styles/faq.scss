@@ -106,9 +106,12 @@
 //!mobile
 @media screen and (max-width: 450px) {
     .FAQ_section {
+        padding-top: 0;
         .FAQ-heading {
             font-size: 2.5rem;
             line-height: 3.25rem;
+            background: -webkit-linear-gradient(#051937, #ff00ea);
+            background-clip: text;
         }
         .faq {
             width: 97.5%;
@@ -118,11 +121,16 @@
                     padding: 8px 6px;
                     padding-right: 3px;
                     letter-spacing: -0.5px;
+                    .faq-toggle {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
                 }
-                .faq-answer {
-                    font-size: 14px;
-                    line-height: calc(14px * 1.325);
-                }
+            }
+            .faq-answer {
+                font-size: 14px;
+                line-height: calc(14px * 1.325);
             }
         }
     }
