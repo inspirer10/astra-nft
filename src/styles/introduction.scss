@@ -95,10 +95,10 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
     .introduction_section {
         width: 87.5%;
-        height: 60vh;
+        height: 62.5vh;
         .introduction_text-content {
             .subheading {
                 font-size: 15px;
@@ -112,6 +112,40 @@
                 font-size: 16px;
                 line-height: calc(16px * 1.375);
                 width: 70%;
+            }
+        }
+    }
+}
+
+//!mobile
+@media screen and (max-width: 450px) {
+    .introduction_section {
+        width: 97.5%;
+        height: 55vh;
+        .background_gradient {
+            .testIMG {
+                width: 72.5%;
+                height: 67.5%;
+            }
+        }
+        .introduction_text-content {
+            width: 95%;
+            left: 50%;
+            .subheading {
+                font-size: 12px;
+                text-align: center;
+            }
+            h2 {
+                font-size: 2.25rem;
+                line-height: calc(2.25rem * 1.15);
+                width: 97.5%;
+                text-align: center;
+            }
+            .description {
+                font-size: 15px;
+                line-height: calc(15px * 1.375);
+                width: 97.5%;
+                text-align: center;
             }
         }
     }

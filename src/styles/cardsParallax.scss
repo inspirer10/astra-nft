@@ -87,11 +87,12 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
     .cards-parallax {
         .card-container {
             .card {
-                width: 87.5vw;
+                height: 70vh;
+                width: 82.5vw;
                 .card-Body {
                     margin-top: 50px;
                     gap: 35px;
@@ -107,6 +108,44 @@
                                 font-size: 2rem;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//!mobile
+@media screen and (max-width: 450px) {
+    .cards-parallax {
+        .card-container {
+            .card {
+                height: 70vh;
+                width: 95vw;
+                padding: 30px 10px;
+                .card-Body {
+                    margin-top: 15px;
+                    gap: 0px;
+                    flex-direction: column-reverse;
+                    .description {
+                        width: 92.5%;
+                        margin-top: 1.25rem;
+                        margin-bottom: 0;
+                        p {
+                            font-size: 15px;
+                            line-height: calc(15px * 1.35);
+                            letter-spacing: 0.5px;
+                            font-weight: 300;
+                            text-align: justify;
+                            &::first-letter {
+                                line-height: calc(1.6rem * 1.1);
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                    .image-Container {
+                        width: 95%;
+                        height: 100%;
                     }
                 }
             }

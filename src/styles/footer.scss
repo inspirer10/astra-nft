@@ -1,16 +1,13 @@
 footer {
     background-color: rgba(21, 24, 29, 0.75);
     color: #fff;
-    height: 15vh;
+    height: 17.5vh;
     position: relative;
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
     .footer_content-container {
-        //position: relative;
-        //height: calc(100vh + 25vh);
-        //top: -100vh;
         position: fixed;
         bottom: 0;
-        height: 15vh;
+        height: 17.5vh;
         width: 100%;
         display: flex;
         align-items: center;
@@ -98,29 +95,84 @@ footer {
     }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1370px) {
+    footer {
+        .footer_content-container {
+            &::after {
+                width: 90%;
+            }
+            .footer-content {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1285px) {
     footer {
         .footer_content-container {
             .footer-content {
-                width: 90%;
                 .brand-wrapper {
                     .name {
                         font-size: 1.6rem;
                         margin-right: 2px;
                     }
                     img {
-                        height: 4.25vh;
+                        height: 4.5vh;
                     }
                 }
                 .footer-links {
                     p {
-                        margin: 0 10px;
+                        margin: 0 12px;
                     }
                 }
                 .footer-icons {
                     .icon {
-                        font-size: 1.25rem;
+                        font-size: 1.45rem;
                         margin: 0 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//!mobile
+@media screen and (max-width: 450px) {
+    footer {
+        .footer_content-container {
+            .footer-content {
+                margin: 025rem auto;
+                width: 100%;
+                flex-direction: column;
+                .brand-wrapper {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    .name {
+                        font-size: 18px;
+                        margin-right: 1px;
+                    }
+                    img {
+                        height: 3.5vh;
+                    }
+                }
+                .footer-links {
+                    width: 100%;
+                    justify-content: space-around;
+                    p {
+                        font-size: 14px;
+                        margin: 0 8px;
+                    }
+                }
+                .footer-icons {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .icon {
+                        font-size: 1.25rem;
+                        margin: 0 0.8rem;
                     }
                 }
             }

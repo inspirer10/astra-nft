@@ -12,7 +12,7 @@ function Faq() {
             answer: 'Yes, you can resell your NFTs directly on our platform. Simply navigate to your collection, select the NFT you wish to sell, set your desired price, and list it for sale. Other users on the platform will be able to view and purchase your NFT. When the sale is completed, the funds will be transferred to your connected wallet.',
         },
         {
-            question: 'What payment methods are accepted for purchasing NFTs?',
+            question: 'What payment methods are accepted for purchasing?',
             answer: 'Our platform primarily accepts payments in Ethereum (ETH). You will need to have ETH in your connected cryptocurrency wallet to make purchases. We recommend using a wallet like MetaMask for smooth transactions. In the future, we plan to support additional cryptocurrencies and possibly fiat currency options.',
         },
         {

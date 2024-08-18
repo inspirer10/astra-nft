@@ -283,12 +283,25 @@ body.modal-open {
     .popularItem_section {
         margin: 10vh auto 17.5vh;
         .highlighted-item {
-            width: 82.5%;
+            width: 97.5%;
         }
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
+    .popularItem_section {
+        .highlighted-item {
+            width: 97.5%;
+            .highlighted-item-content {
+                .ntf-name {
+                    font-size: 2.6rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
     .popularItem_section {
         width: 87.5%;
         margin: 10vh auto 17.5vh;
@@ -296,6 +309,58 @@ body.modal-open {
             width: 100%;
             .highlighted-item-content {
                 margin-left: 5%;
+            }
+        }
+    }
+}
+
+//!mobile
+@media screen and (max-width: 450px) {
+    .popularItem_section {
+        width: 97.5%;
+        margin: 10vh auto 17.5vh;
+        h2 {
+            font-size: 25px;
+            letter-spacing: -0.5px;
+            text-align: center;
+        }
+        .buttons-row {
+            .sort-button {
+                font-size: 20px;
+            }
+            .buttons-wrapper button {
+                font-size: 19px;
+                margin-right: 0.5rem;
+            }
+        }
+        .highlighted-item {
+            width: 100%;
+            flex-direction: column;
+            img {
+                width: 97.5%;
+                height: 47.5vh;
+                margin: 0 auto;
+            }
+            .highlighted-item-content {
+                width: 100%;
+                margin-top: 5vh;
+                margin-left: 0%;
+                .ntf-name {
+                    font-size: 2.5rem;
+                    width: 100%;
+                    text-align: center;
+                }
+                .details-container {
+                    width: 90%;
+                }
+                .current-prize-container {
+                    width: 80%;
+                    margin-bottom: 3vh;
+                }
+                .buy_button,
+                button {
+                    width: 65%;
+                }
             }
         }
     }
