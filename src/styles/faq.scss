@@ -120,17 +120,18 @@
                     font-size: 14px;
                     padding: 8px 6px;
                     padding-right: 3px;
-                    letter-spacing: -0.5px;
+                    letter-spacing: -0.2px;
+                    text-wrap: nowrap;
                     .faq-toggle {
                         display: flex;
                         align-items: center;
                         justify-content: center;
                     }
                 }
-            }
-            .faq-answer {
-                font-size: 14px;
-                line-height: calc(14px * 1.325);
+                .faq-answer {
+                    font-size: 14px;
+                    line-height: calc(14px * 1.325);
+                }
             }
         }
     }
